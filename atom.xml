@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yekongle.github.io/"/>
-  <updated>2020-03-28T08:46:30.798Z</updated>
+  <updated>2020-03-28T15:01:25.244Z</updated>
   <id>https://yekongle.github.io/</id>
   
   <author>
@@ -17,15 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Spring Boot2 实战系列之使用HTTPS</title>
+    <link href="https://yekongle.github.io/2020/03/28/springboot-https-sample/"/>
+    <id>https://yekongle.github.io/2020/03/28/springboot-https-sample/</id>
+    <published>2020-03-28T14:47:57.000Z</published>
+    <updated>2020-03-28T15:01:25.244Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;各位小伙伴有没有发现，现在的网站基本都用上了 HTTP，因为 HTTP的通信是明文的，容易被不怀好意的人监听通信，窥探用户的隐私，这简直就是裸奔。而 HTTPS 使用 SSL 证书在加密通信前进行身份验证，协商加密算法以及交换密钥，可以满足基本的安全需求，即防窃取，防篡改，防钓鱼。&lt;/p&gt;
+&lt;p&gt;https 通信的流程如下:&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Spring Boot" scheme="https://yekongle.github.io/categories/Spring-Boot/"/>
+    
+    
+      <category term="SpringBoot" scheme="https://yekongle.github.io/tags/SpringBoot/"/>
+    
+      <category term="https" scheme="https://yekongle.github.io/tags/https/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo更换电脑如何同步博客配置解决办法</title>
     <link href="https://yekongle.github.io/2020/03/28/hexo-online/"/>
     <id>https://yekongle.github.io/2020/03/28/hexo-online/</id>
     <published>2020-03-28T08:42:03.000Z</published>
-    <updated>2020-03-28T08:46:30.798Z</updated>
+    <updated>2020-03-28T08:50:02.573Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;关于使用 Hexo 搭建个人博客可参考本人另一篇博文: &lt;/p&gt;
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;关于使用 Hexo 搭建个人博客可参考本人另一篇博文: &lt;a href=&quot;https://blog.csdn.net/qq_23483671/article/details/78635372&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo框架+NextT主题搭建博客教程&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;相信有不少小伙伴使用 Hexo 来搭建自己的个人博客，但问题是如果你电脑突然坏了，或者你想在其他电脑编辑发表你的博客，又要花费时间精力来重新配置你的站点，这样就比较麻烦。这时，我们可以将我们的站点放到 Github 或者其他 Git 托管平台，如此一来，无论你在哪里，都可以随时 clone 下来，简单配置下，就可以继续玩耍。&lt;br&gt;
     
     </summary>
@@ -42,11 +65,11 @@
     <link href="https://yekongle.github.io/2020/03/28/springboot-properties-sample/"/>
     <id>https://yekongle.github.io/2020/03/28/springboot-properties-sample/</id>
     <published>2020-03-28T06:14:26.000Z</published>
-    <updated>2020-03-28T08:45:58.548Z</updated>
+    <updated>2020-03-28T08:55:49.513Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;在项目中我们常常需要配置一些基本的属性，比如连接数据库的 URL, Driven, username，password 等，这些配置内容如果放在代码中会变得难以维护, 想象一下，当你的应用配置信息临时需要变更时，你要改动代码然后重新编译打包再部署，如此一来就耗费大量时间，给用户带来不好体验。因此，我们通常将配置信息放在一个配置文件中，一般以 ==.properties== 结尾，因为可以直接通过 Properties 类读取。&lt;/p&gt;
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;在项目中我们常常需要配置一些基本的属性，比如连接数据库的 URL, Driven, username，password 等，这些配置内容如果放在代码中会变得难以维护, 想象一下，当你的应用配置信息临时需要变更时，你要改动代码然后重新编译打包再部署，如此一来就耗费大量时间，给用户带来不好体验。因此，我们通常将配置信息放在一个配置文件中，一般以 ==.properties== 结尾，因为可以直接通过 Properties 类读取。&lt;/p&gt;
 &lt;p&gt;在 Spring Boot 中，默认使用一个全局的配置文件 ==application.properties==, 同时也支持 ==application.yml==, 默认放在 ==src/main/resource== 下面, 可以直接将 .properties 改为 .yml, 效果一样。两者区别: &lt;strong&gt;properties 的配置是以 key=value 格式存储内容，而 yaml 则是以数据为中心的语言，配置更加清晰&lt;/strong&gt;。如下面两者配置方式对比：&lt;br&gt;
     
     </summary>
