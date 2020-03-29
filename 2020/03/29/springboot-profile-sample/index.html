@@ -106,7 +106,7 @@
 
 
 
-  <meta name="keywords" content="hexo,">
+  <meta name="keywords" content="SpringBoot,">
 
 
 
@@ -119,23 +119,23 @@
 
 
 
-<meta name="description" content="前言关于使用 Hexo 搭建个人博客可参考本人另一篇博文: Hexo框架+NextT主题搭建博客教程 相信有不少小伙伴使用 Hexo 来搭建自己的个人博客，但问题是如果你电脑突然坏了，或者你想在其他电脑编辑发表你的博客，又要花费时间精力来重新配置你的站点，这样就比较麻烦。这时，我们可以将我们的站点放到 Github 或者其他 Git 托管平台，如此一来，无论你在哪里，都可以随时 clone 下来，">
-<meta name="keywords" content="hexo">
+<meta name="description" content="前言在开发软件中，一个值得注意的问题就是当程序从一个环境迁移到另一个环境时，我们的程序是否依然正常运行，因为在开发阶段时，某些环境配置可能与生产环境不同，例如数据库配置，加密算法等。 在 Spring 中，你可以分别为不同的环境设置一个配置类，然后在运行时再根据环境来确定应该创建哪个 bean 和 不创建哪个 bean。在 Spring3.1 中，引入了 bean profile 的概念，可以将它">
+<meta name="keywords" content="SpringBoot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo更换电脑如何同步博客配置解决办法">
-<meta property="og:url" content="https://yekongle.github.io/2020/03/28/hexo-online/index.html">
+<meta property="og:title" content="Spring Boot2 实战系列之多环境Profile">
+<meta property="og:url" content="https://yekongle.github.io/2020/03/29/springboot-profile-sample/index.html">
 <meta property="og:site_name" content="Yekongle">
-<meta property="og:description" content="前言关于使用 Hexo 搭建个人博客可参考本人另一篇博文: Hexo框架+NextT主题搭建博客教程 相信有不少小伙伴使用 Hexo 来搭建自己的个人博客，但问题是如果你电脑突然坏了，或者你想在其他电脑编辑发表你的博客，又要花费时间精力来重新配置你的站点，这样就比较麻烦。这时，我们可以将我们的站点放到 Github 或者其他 Git 托管平台，如此一来，无论你在哪里，都可以随时 clone 下来，">
+<meta property="og:description" content="前言在开发软件中，一个值得注意的问题就是当程序从一个环境迁移到另一个环境时，我们的程序是否依然正常运行，因为在开发阶段时，某些环境配置可能与生产环境不同，例如数据库配置，加密算法等。 在 Spring 中，你可以分别为不同的环境设置一个配置类，然后在运行时再根据环境来确定应该创建哪个 bean 和 不创建哪个 bean。在 Spring3.1 中，引入了 bean profile 的概念，可以将它">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://wx4.sinaimg.cn/mw690/005GXpqPgy1gd9psy57o5j30gv0bf74p.jpg">
-<meta property="og:image" content="https://wx1.sinaimg.cn/mw690/005GXpqPgy1gd9pt9yif0j30iu0ghjs7.jpg">
-<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gd9ptqwgf8j30ld0e0ab4.jpg">
-<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gd9ptuwmgoj30l405vq35.jpg">
-<meta property="og:updated_time" content="2020-03-28T08:50:02.573Z">
+<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gdaw0tn5ptj30cs0d53yw.jpg">
+<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gd9q21b1d3j30dr04idfv.jpg">
+<meta property="og:image" content="https://wx4.sinaimg.cn/mw690/005GXpqPgy1gdaw16ax2xj30b7040dfr.jpg">
+<meta property="og:image" content="https://wx2.sinaimg.cn/mw690/005GXpqPgy1gdaw19f74kj30at03twee.jpg">
+<meta property="og:updated_time" content="2020-03-29T08:44:05.504Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo更换电脑如何同步博客配置解决办法">
-<meta name="twitter:description" content="前言关于使用 Hexo 搭建个人博客可参考本人另一篇博文: Hexo框架+NextT主题搭建博客教程 相信有不少小伙伴使用 Hexo 来搭建自己的个人博客，但问题是如果你电脑突然坏了，或者你想在其他电脑编辑发表你的博客，又要花费时间精力来重新配置你的站点，这样就比较麻烦。这时，我们可以将我们的站点放到 Github 或者其他 Git 托管平台，如此一来，无论你在哪里，都可以随时 clone 下来，">
-<meta name="twitter:image" content="https://wx4.sinaimg.cn/mw690/005GXpqPgy1gd9psy57o5j30gv0bf74p.jpg">
+<meta name="twitter:title" content="Spring Boot2 实战系列之多环境Profile">
+<meta name="twitter:description" content="前言在开发软件中，一个值得注意的问题就是当程序从一个环境迁移到另一个环境时，我们的程序是否依然正常运行，因为在开发阶段时，某些环境配置可能与生产环境不同，例如数据库配置，加密算法等。 在 Spring 中，你可以分别为不同的环境设置一个配置类，然后在运行时再根据环境来确定应该创建哪个 bean 和 不创建哪个 bean。在 Spring3.1 中，引入了 bean profile 的概念，可以将它">
+<meta name="twitter:image" content="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gdaw0tn5ptj30cs0d53yw.jpg">
 
 
 
@@ -165,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="https://yekongle.github.io/2020/03/28/hexo-online/">
+  <link rel="canonical" href="https://yekongle.github.io/2020/03/29/springboot-profile-sample/">
 
 
 
 
 
-  <title>Hexo更换电脑如何同步博客配置解决办法 | Yekongle</title>
+  <title>Spring Boot2 实战系列之多环境Profile | Yekongle</title>
   
 
 
@@ -340,7 +340,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yekongle.github.io/2020/03/28/hexo-online/">
+    <link itemprop="mainEntityOfPage" href="https://yekongle.github.io/2020/03/29/springboot-profile-sample/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yekongle">
@@ -357,7 +357,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo更换电脑如何同步博客配置解决办法</h1>
+          <h1 class="post-title" itemprop="name headline">Spring Boot2 实战系列之多环境Profile</h1>
         
 
         <div class="post-meta">
@@ -369,8 +369,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-28T16:42:03+08:00">
-                2020-03-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-29T16:28:18+08:00">
+                2020-03-29
               </time>
             
 
@@ -392,8 +392,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Interesting/" itemprop="url" rel="index">
-                    <span itemprop="name">Interesting</span>
+                  <a href="/categories/Spring-Boot/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring Boot</span>
                   </a>
                 </span>
 
@@ -410,8 +410,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/03/28/hexo-online/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/28/hexo-online/" itemprop="commentCount"></span>
+                <a href="/2020/03/29/springboot-profile-sample/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/29/springboot-profile-sample/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -444,21 +444,24 @@
       
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>关于使用 Hexo 搭建个人博客可参考本人另一篇博文: <a href="https://blog.csdn.net/qq_23483671/article/details/78635372" target="_blank" rel="noopener">Hexo框架+NextT主题搭建博客教程</a></p>
-<p>相信有不少小伙伴使用 Hexo 来搭建自己的个人博客，但问题是如果你电脑突然坏了，或者你想在其他电脑编辑发表你的博客，又要花费时间精力来重新配置你的站点，这样就比较麻烦。这时，我们可以将我们的站点放到 Github 或者其他 Git 托管平台，如此一来，无论你在哪里，都可以随时 clone 下来，简单配置下，就可以继续玩耍。<br><a id="more"></a></p>
-<h3 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h3><h4 id="准备新仓库或新分支"><a href="#准备新仓库或新分支" class="headerlink" title="准备新仓库或新分支"></a>准备新仓库或新分支</h4><p>首先，你可以在 Github 创建一个新仓库或者直接在自己的 Gihubpage 仓库创建一条新 branch 来存放你的 hexo 相关配置文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地创建新分支 hexo 并切换到该分支</span></span><br><span class="line">git checkout -b hexo</span><br><span class="line"><span class="comment"># 推送分支并merge到远程分支hexo, 没有会自动创建</span></span><br><span class="line">git push origin hexo:hexo</span><br></pre></td></tr></table></figure>
-<p><strong>或者用 eclipse 管理仓库，创建新分支</strong><br><img src="https://wx4.sinaimg.cn/mw690/005GXpqPgy1gd9psy57o5j30gv0bf74p.jpg" alt="image"></p>
-<p><strong>推送分支到远程</strong><br><img src="https://wx1.sinaimg.cn/mw690/005GXpqPgy1gd9pt9yif0j30iu0ghjs7.jpg" alt="image"></p>
-<h4 id="删掉分支-hexo-下面除了-git-的内容"><a href="#删掉分支-hexo-下面除了-git-的内容" class="headerlink" title="删掉分支 hexo 下面除了 git 的内容"></a>删掉分支 hexo 下面除了 git 的内容</h4><p><img src="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gd9ptqwgf8j30ld0e0ab4.jpg" alt="image"></p>
-<h4 id="将现有的-hexo-目录拷贝到该分支目录下"><a href="#将现有的-hexo-目录拷贝到该分支目录下" class="headerlink" title="将现有的 hexo 目录拷贝到该分支目录下"></a>将现有的 hexo 目录拷贝到该分支目录下</h4><p>要拷贝的文件或目录有：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line"><span class="built_in">source</span>/</span><br><span class="line">themes/</span><br><span class="line">.gitignore</span><br></pre></td></tr></table></figure></p>
-<p>.gitignore 里的内容如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gd9ptuwmgoj30l405vq35.jpg" alt="image"></p>
-<h4 id="推送到远程分支"><a href="#推送到远程分支" class="headerlink" title="推送到远程分支"></a>推送到远程分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"Add hexo"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-<h4 id="使用-hexo-分支"><a href="#使用-hexo-分支" class="headerlink" title="使用 hexo 分支"></a>使用 hexo 分支</h4><p>当需要在其他电脑编写博客时，就可以 clone 下来<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b hexo https://github.com/yourname/xxx.github.io.git</span><br></pre></td></tr></table></figure></p>
-<p>然后在新电脑配置 hexo 环境(需先安装 node.js 环境)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 hexo-cli</span></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<h4 id="使用回顾"><a href="#使用回顾" class="headerlink" title="使用回顾"></a>使用回顾</h4><p>进入 hexo 分支目录，打开命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建文章</span></span><br><span class="line">hexo new <span class="string">""</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建类别</span></span><br><span class="line">hexo new page <span class="string">""</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地运行</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署到 github page</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
-<p>部署完毕后记得将源文件 push 到远程，同步博客内容。</p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在开发软件中，一个值得注意的问题就是当程序从一个环境迁移到另一个环境时，我们的程序是否依然正常运行，因为在开发阶段时，某些环境配置可能与生产环境不同，例如数据库配置，加密算法等。</p>
+<p>在 Spring 中，你可以分别为不同的环境设置一个配置类，然后在运行时再根据环境来确定应该创建哪个 bean 和 不创建哪个 bean。在 Spring3.1 中，引入了 bean profile 的概念，可以将它理解为我们在Spring容器中所定义的Bean的逻辑组名称，对应到环境一般就是 dev(开发环境)，uat(用户测试环境), prod(生产环境)，在部署时指定激活哪个 profile 就行了。<br><a id="more"></a><br>在 SpringBoot 中，可以通过创建 application-{profile}.properties, 然后在application.properties 中来指定激活的 profile, 比如指定active profile 为 prod 后，spring就会加载 application-prod.properties。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spring.profiles.active=prod</span><br></pre></td></tr></table></figure></p>
+<p>但这样如果每次更换环境时都要更改配置，就比较麻烦，所以可以利用 maven profiles 在构建应用时指定用什么 pofile，springboot 再将这个值替换就行了。</p>
+<p>下面利用 server 端口来做一个例子， 分别为每个环境设置一个对应的端口。</p>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><p>项目结构图如下：<br><img src="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gdaw0tn5ptj30cs0d53yw.jpg" alt="image"></p>
+<p>pom 依赖如下：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">	<span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.5.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">relativePath</span>/&gt;</span> <span class="comment">&lt;!-- lookup parent from repository --&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>top.yekongle<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springboot-profile-sample<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">name</span>&gt;</span>springboot-profile-sample<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">description</span>&gt;</span>Profile sample for Spring Boot<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">java.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">java.version</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-test<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.junit.vintage<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit-vintage-engine<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>dev<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="comment">&lt;!--默认激活 dev 环境--&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">active.profile</span>&gt;</span>dev<span class="tag">&lt;/<span class="name">active.profile</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>uat<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">active.profile</span>&gt;</span>uat<span class="tag">&lt;/<span class="name">active.profile</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>prod<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">active.profile</span>&gt;</span>prod<span class="tag">&lt;/<span class="name">active.profile</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">finalName</span>&gt;</span>$&#123;project.artifactId&#125;<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!--只包含全局 properties 和指定 profile 的properties--&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">include</span>&gt;</span>application.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">include</span>&gt;</span>application-$&#123;active.profile&#125;.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="代码编写"><a href="#代码编写" class="headerlink" title="代码编写"></a>代码编写</h3><p>编辑 application.properties<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 对应 pom 中的 active.profile 属性，默认是 dev</span></span><br><span class="line">spring.profiles.active=@active.profile@</span><br></pre></td></tr></table></figure></p>
+<p>创建 application-dev.properties<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">server.port=8080</span><br></pre></td></tr></table></figure></p>
+<p>创建 application-uat.properties<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">server.port=8081</span><br></pre></td></tr></table></figure></p>
+<p>创建 application-prod.properties<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">server.port=80</span><br></pre></td></tr></table></figure></p>
+<p>创建 HelloController.java<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">index</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Hello world!"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h3><p>打开 IDEA 命令行, 分别输入如下命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用 dev 环境</span></span><br><span class="line">mvn clean spring-boot:run -P dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 uat 环境</span></span><br><span class="line">mvn clean spring-boot:run -P uat</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 prod 环境</span></span><br><span class="line">mvn clean spring-boot:run -P prod</span><br></pre></td></tr></table></figure></p>
+<p>打开浏览器</p>
+<p>访问 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a><br><img src="https://wx3.sinaimg.cn/mw690/005GXpqPgy1gd9q21b1d3j30dr04idfv.jpg" alt="image"></p>
+<p>访问 <a href="http://localhost:8081" target="_blank" rel="noopener">http://localhost:8081</a><br><img src="https://wx4.sinaimg.cn/mw690/005GXpqPgy1gdaw16ax2xj30b7040dfr.jpg" alt="image"></p>
+<p>访问 <a href="http://localhost" target="_blank" rel="noopener">http://localhost</a><br><img src="https://wx2.sinaimg.cn/mw690/005GXpqPgy1gdaw19f74kj30at03twee.jpg" alt="image"></p>
+<p>可见为不同环境配置的端口访问成功。</p>
+<p>项目已上传至 Github: <a href="https://github.com/yekongle/springboot-code-samples/tree/master/springboot-profile-sample" target="_blank" rel="noopener">https://github.com/yekongle/springboot-code-samples/tree/master/springboot-profile-sample</a> , 希望对小伙伴们有帮助哦。</p>
 
       
     </div>
@@ -503,7 +506,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://yekongle.github.io/2020/03/28/hexo-online/" title="Hexo更换电脑如何同步博客配置解决办法">https://yekongle.github.io/2020/03/28/hexo-online/</a>
+    <a href="https://yekongle.github.io/2020/03/29/springboot-profile-sample/" title="Spring Boot2 实战系列之多环境Profile">https://yekongle.github.io/2020/03/29/springboot-profile-sample/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -518,7 +521,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/SpringBoot/" rel="tag"># SpringBoot</a>
           
         </div>
       
@@ -531,8 +534,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/03/28/springboot-properties-sample/" rel="next" title="Spring Boot2 实战系列之属性配置">
-                <i class="fa fa-chevron-left"></i> Spring Boot2 实战系列之属性配置
+              <a href="/2020/03/28/springboot-https-sample/" rel="next" title="Spring Boot2 实战系列之使用HTTPS">
+                <i class="fa fa-chevron-left"></i> Spring Boot2 实战系列之使用HTTPS
               </a>
             
           </div>
@@ -540,10 +543,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/03/28/springboot-https-sample/" rel="prev" title="Spring Boot2 实战系列之使用HTTPS">
-                Spring Boot2 实战系列之使用HTTPS <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -703,7 +702,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实践"><span class="nav-number">2.</span> <span class="nav-text">实践</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#准备新仓库或新分支"><span class="nav-number">2.1.</span> <span class="nav-text">准备新仓库或新分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删掉分支-hexo-下面除了-git-的内容"><span class="nav-number">2.2.</span> <span class="nav-text">删掉分支 hexo 下面除了 git 的内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将现有的-hexo-目录拷贝到该分支目录下"><span class="nav-number">2.3.</span> <span class="nav-text">将现有的 hexo 目录拷贝到该分支目录下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#推送到远程分支"><span class="nav-number">2.4.</span> <span class="nav-text">推送到远程分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-hexo-分支"><span class="nav-number">2.5.</span> <span class="nav-text">使用 hexo 分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用回顾"><span class="nav-number">2.6.</span> <span class="nav-text">使用回顾</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建项目"><span class="nav-number">2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码编写"><span class="nav-number">3.</span> <span class="nav-text">代码编写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行测试"><span class="nav-number">4.</span> <span class="nav-text">运行测试</span></a></li></ol></div>
             
 
           </div>
